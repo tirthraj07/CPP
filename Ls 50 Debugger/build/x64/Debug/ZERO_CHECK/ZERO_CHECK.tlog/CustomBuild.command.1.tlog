@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\CPP\DEBUGGER\BUILD\CMAKEFILES\624CE2F4E0DCC799AA526521A3765DB7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LENOVO/Desktop/CPP/debugger -BC:/Users/LENOVO/Desktop/CPP/debugger/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/LENOVO/Desktop/CPP/debugger/build/DebuggerExample.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
